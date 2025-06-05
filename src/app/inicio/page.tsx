@@ -68,7 +68,7 @@ function Hola() {
       {/* Logo y Sidebar */}
       <header className="flex justify-between items-start p-4">
         <Link href="/inicio">
-              <img src="/logoChico.png" alt="Logo" className="w-36 cursor-pointer" />
+              <img src="/logo3.png" alt="Logo" className="w-36 cursor-pointer" />
             </Link>
         <Sidebar />
       </header>
@@ -92,37 +92,24 @@ function Hola() {
                 <FaFileAlt size={32} />
                 <FaPlus size={20} />
               </div>
-              <h2 className="mt-6 text-2xl font-bold">Informes de Ventas</h2>
+              <h2 className="mt-6 text-2xl font-bold">Estadisticas</h2>
             </div>
           )}
 
-          {/* Productos */}
-          {canSeeProductos && (
+           {/* Ventas (todos la ven) */}
+          {canSeeVentas && (
             <div
               className="custom-card flex flex-col items-start justify-between p-6 rounded-2xl cursor-pointer transition-transform hover:scale-105"
               onClick={handleProductosClick}
             >
               <div className="flex justify-between w-full">
-                <FaChartBar size={32} />
+                <FaFileAlt size={32} />
                 <FaPlus size={20} />
               </div>
-              <h2 className="mt-6 text-2xl font-bold">Informes de Productos</h2>
+              <h2 className="mt-6 text-2xl font-bold">Productos</h2>
             </div>
           )}
 
-          {/* Clientes */}
-          {canSeeClientes && (
-            <div
-              className="custom-card flex flex-col items-start justify-between p-6 rounded-2xl cursor-pointer transition-transform hover:scale-105"
-              onClick={handleClientesClick}
-            >
-              <div className="flex justify-between w-full">
-                <FaUser size={32} />
-                <FaPlus size={20} />
-              </div>
-              <h2 className="mt-6 text-2xl font-bold">Informes de Clientes</h2>
-            </div>
-          )}
         </div>
       </div>
     </div>

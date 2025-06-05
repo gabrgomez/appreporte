@@ -4,7 +4,8 @@ interface MarcaDeAguaProps {
   usuario?: string;
 }
 
-export default function MarcaDeAgua({ usuario }: MarcaDeAguaProps) {
+
+/*export default function MarcaDeAgua({ usuario }: MarcaDeAguaProps) {
   const fecha = new Date().toLocaleDateString('es-CL', {
     day: '2-digit',
     month: '2-digit',
@@ -37,4 +38,4 @@ export default function MarcaDeAgua({ usuario }: MarcaDeAguaProps) {
       `}</style>
     </div>
   );
-}
+}*/

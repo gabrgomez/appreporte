@@ -58,9 +58,8 @@ export default function Sidebar() {
 
               <nav className="flex flex-col gap-4">
                 <a href="/inicio" className="text-black hover:underline">Inicio</a>
-                <a href="/dashboard/ventas" className="text-black hover:underline">Ventas</a>
+                <a href="/dashboard/ventas" className="text-black hover:underline">Estadisticas</a>
                 <a href="/dashboard/productos" className="text-black hover:underline">Productos</a>
-                <a href="/dashboard/clientes" className="text-black hover:underline">Clientes</a>
                 {userRole === 'admin' && (
                   <a href="/admin/users" className="text-black hover:underline">Administrar Usuarios</a>
                 )}

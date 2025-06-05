@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "src/utils/supabase/client"; // ajusta esta ruta si es necesario
+import '../../styles/globals.css';
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -45,50 +46,45 @@ export default function LoginPage() {
         Tu navegador no soporta video HTML5.
       </video>
 
-      <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
-        <img src="/logoChico.png" alt="Logo Global Holding" className="w-40 mb-6" />
+      {/* Contenido centrado */}
+      <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center px-4">
+        <img src="/logo3.png" alt="Logo Global Holding" className="w-52 mb-4" />
         <h1 className="text-white text-3xl font-bold">¡Bienvenido!</h1>
         <p className="text-white mb-6">Inicia sesión</p>
 
-        <div className="rounded-2xl p-8 w-80 flex flex-col items-center" style={{ backgroundColor: 'rgba(10, 25, 47, 0.7)' }}>
+        {/* Caja glassmorphism */}
+        <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl shadow-xl p-8 w-full max-w-sm flex flex-col items-center">
           <input
             type="email"
             placeholder="Correo"
-            className="w-full mb-4 p-2 rounded-lg text-black bg-white"
+            className="w-full mb-4 p-3 rounded-lg bg-white text-black placeholder-gray-700 outline-none"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <input
             type="password"
             placeholder="Contraseña"
-            className="w-full mb-6 p-2 rounded-lg text-black bg-white"
+            className="w-full mb-6 p-3 rounded-lg bg-white text-black placeholder-gray-700 outline-none"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            onKeyDown={(e) => {
-              if (e.key === "Enter") handleLogin();
-            }}
+            onKeyDown={(e) => e.key === "Enter" && handleLogin()}
           />
           <button
-            className="bg-white text-black font-bold px-6 py-2 rounded-full mb-2 transition transform hover:scale-105 active:scale-95"
             onClick={handleLogin}
+            className="w-full bg-white text-black font-bold px-6 py-3 rounded-full transition transform hover:scale-105 active:scale-95"
           >
             ENTRAR
           </button>
 
-          {error && <p className="text-red-500 text-sm">{error}</p>}
+          {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
           <a
             href="/soporte"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white text-sm underline cursor-pointer"
+            className="text-white text-sm underline mt-4"
           >
             ¿Necesitas ayuda?
           </a>
-
-        </div>
-
-        <div className="absolute bottom-4">
-          <img src="/logo1.png" alt="logos" className="h-10" />
         </div>
       </div>
     </div>

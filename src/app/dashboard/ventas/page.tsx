@@ -54,7 +54,7 @@ export default function VentasDashboard() {
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
-      <div className="fixed inset-0 bg-cover bg-center brightness-75" style={{ backgroundImage: "url('/diamante-de-sangre.jpg')" }}></div>
+      <div className="fixed inset-0 bg-cover bg-center brightness-75" style={{ backgroundImage: "url('/diamante-de-sangre.jdpg')" }}></div>
       <div className="relative z-10 flex flex-col h-full p-4">
         <div className="flex justify-between items-start w-full max-w-7xl mx-auto mb-6">
           <Link href="/inicio">

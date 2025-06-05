@@ -13,7 +13,7 @@
     width: 100vw;
     height: 100vh;
   
-    background-image: url('/diamante-de-sangre.jpg');
+    background-image: url('/diamante-de-sangre.jgpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -43,8 +43,8 @@
   }
   
   .custom-card {
-    background-color: rgba(10, 25, 47, 0.7);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: #486d59;
     border-radius: 20px;
     padding: 20px;
     cursor: pointer;

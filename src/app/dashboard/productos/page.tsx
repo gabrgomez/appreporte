@@ -9,7 +9,7 @@ export default function ProductosDashboard() {
       {/* Fondo fijo */}
       <div
         className="fixed inset-0 bg-cover bg-center brightness-75"
-        style={{ backgroundImage: "url('/diamante-de-sangre.jpg')" }}
+        style={{ backgroundImage: "url('/diamante-de-sangre.jsg')" }}
       ></div>
 
       {/* Contenido principal */}

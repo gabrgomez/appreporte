@@ -68,7 +68,7 @@ function Hola() {
       {/* Logo y Sidebar */}
       <header className="flex justify-between items-start p-4">
         <Link href="/inicio">
-              <img src="/logo3.png" alt="Logo" className="w-36 cursor-pointer" />
+              <img src="/Logo_DuocUC.png" alt="Logo" className="w-36 cursor-pointer" />
             </Link>
         <Sidebar />
       </header>
@@ -97,7 +97,7 @@ function Hola() {
           )}
 
            {/* Ventas (todos la ven) */}
-          {canSeeVentas && (
+         {/* {canSeeVentas && (
             <div
               className="custom-card flex flex-col items-start justify-between p-6 rounded-2xl cursor-pointer transition-transform hover:scale-105"
               onClick={handleProductosClick}
@@ -108,7 +108,7 @@ function Hola() {
               </div>
               <h2 className="mt-6 text-2xl font-bold">Productos</h2>
             </div>
-          )}
+          )}*/}
 
         </div>
       </div>

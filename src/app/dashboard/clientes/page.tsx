@@ -7,17 +7,17 @@ export default function ClientesDashboard() {
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {/* Fondo fijo */}
-      <div
+      {/* <div
         className="fixed inset-0 bg-cover bg-center brightness-75"
         style={{ backgroundImage: "url('/diamante-de-sangre.jpg')" }}
-      ></div>
+      ></div>*/}
 
       {/* Contenido principal */}
       <div className="relative z-10 flex flex-col h-full p-4">
         {/* Header */}
         <div className="flex justify-between items-start w-full max-w-7xl mx-auto mb-6">
           <Link href="/inicio">
-            <img src="/logo3.png" alt="Logo" className="w-36 cursor-pointer" />
+            <img src="/Logo_DuocUC.png" alt="Logo" className="w-36 cursor-pointer" />
           </Link>
 
           <Sidebar />

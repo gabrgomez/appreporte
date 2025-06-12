@@ -17,7 +17,7 @@ export default function ProductosDashboard() {
         {/* Header */}
         <div className="flex justify-between items-start w-full max-w-7xl mx-auto mb-6">
           <Link href="/inicio">
-            <img src="/logo3.png" alt="Logo" className="w-36 cursor-pointer" />
+            <img src="/Logo_DuocUC.png" alt="Logo" className="w-36 cursor-pointer" />
           </Link>
 
           <Sidebar />
@@ -29,7 +29,7 @@ export default function ProductosDashboard() {
 
           {/* Espacio vacío decorativo */}
           <div className="w-full h-[500px] rounded-lg bg-white/10 border border-white/20 flex items-center justify-center text-white text-lg italic">
-            <img src="/logo4.png" alt="imagen" />
+            <img src="/Logo_DuocUC.png" alt="imagen" />
           </div>
         </div>
       </div>

@@ -48,7 +48,7 @@ export default function LoginPage() {
 
       {/* Contenido centrado */}
       <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center px-4">
-        <img src="/logo3.png" alt="Logo Global Holding" className="w-52 mb-4" />
+        <img src="/Logo_DuocUC.png" alt="Logo Global Holding" className="w-52 mb-4" />
         <h1 className="text-white text-3xl font-bold">¡Bienvenido!</h1>
         <p className="text-white mb-6">Inicia sesión</p>
 
